@@ -120,8 +120,8 @@ The result is as shon below:
 
 ## Google Slide Presentation
 
-https://docs.google.com/presentation/d/1RrO__E5jH1pj5sDdbzeU8Uul9VPKVmKR/edit#slide=id.p1
+https://docs.google.com/presentation/d/1RrO__E5jH1pj5sDdbzeU8Uul9VPKVmKR/edit?usp=sharing&ouid=114649998640594619120&rtpof=true&sd=true
 
-##Appendix
+## Appendix
 
 
