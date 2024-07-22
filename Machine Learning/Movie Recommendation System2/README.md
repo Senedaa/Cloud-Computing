@@ -4,6 +4,10 @@ In this project, we implemented a movie recommendation engine using PySpark on G
 
 ## Design
 
+This is the Design Diagram:
+
+![Design](https://github.com/Senedaa/Cloud-Computing/blob/main/Machine%20Learning/Movie%20Recommendation%20System2/images/Design.png)
+
 ## Implementation
 
 #### 1. Upload Data and Scripts to GCS
@@ -66,20 +70,19 @@ gcloud dataproc jobs submit pyspark gs://movie_recommendation_with_mllib_collabo
 
 Replace `movie_recommendation_with_mllib_collaborative_filter` with the actual name of your GCS bucket.
 
-### Results
+## Results
 
 Upon executing the PySpark job, the output will display the root-mean-square error (RMSE) of the model and the top 10 movie recommendations for each user. Here is a sample output for illustration:
+![Design](https://github.com/Senedaa/Cloud-Computing/blob/main/Machine%20Learning/Movie%20Recommendation%20System2/images/result.png)
 
-```
-Root-mean-square error = 0.873
-+------+-------+---------+
-|userId|movieId|   rating|
-+------+-------+---------+
-|   100|   1234|4.5432124|
-|   100|   5678|4.2345678|
-|   100|   9101|4.1234567|
-+------+-------+---------+
-...
-```
+Predicted vs. Actual Ratings: The model's predicted ratings are mostly high (above 4.9), indicating it expects the user to rate these movies highly. The user's actual ratings show a tendency to rate certain movies very highly. Genre Match: There is a reasonable overlap in genres between recommended movies and the user's top-rated movies, suggesting the system effectively captures the user's preferences for genres like Comedy, Drama, and Romance.
 
 This result demonstrates the successful implementation and deployment of the movie recommendation engine using PySpark on GCP Dataproc. By following these steps, your PySpark script will correctly read the files from GCS when running on GCP.
+
+## Presentation 
+
+https://docs.google.com/presentation/d/1B6PUaX1Zj4bJotzjtKdEFCSUWQkSW55nc_ks65JJ1PA/edit?usp=sharing
+
+## Appendix
+https://colab.research.google.com/drive/1-wVWJim5iMIFxQgvXXTTlPBkIU-4GoHh
+
